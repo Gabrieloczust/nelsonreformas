@@ -1,7 +1,13 @@
+// Abrir/Fechar menu
 $('.botao-menu').click(function () {
-  $('.menu').slideToggle('fast')
+  $('.menu').slideToggle()
 })
 
+$('.menu span').click(function () {
+  $('.menu').slideToggle()
+})
+
+// Efeitos de click do menu
 var linkMenu = $('.drop');
 var alturas = [];
 
@@ -15,16 +21,18 @@ linkMenu.on('click', function () {
   }, 500);
 });
 
+// Botao topo aparecer so quando o menu sumir
 $(document).scroll(function () {
   var y = $(this).scrollTop();
   var header = $('.cabecalho').outerHeight()
-  if (y > header) {
-    $('.botao-top').fadeIn();
-  } else {
+  if ((y < header) || ($(window).scrollTop() + $(window).height() > ($(document).height() - $(".copy").outerHeight()))) {
     $('.botao-top').fadeOut();
+  } else {
+    $('.botao-top').fadeIn();
   }
 });
 
+// Máscara telefone
 var SPMaskBehavior = function (val) {
     return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
   },
@@ -36,6 +44,20 @@ var SPMaskBehavior = function (val) {
 
 $('.input-number').mask(SPMaskBehavior, spOptions);
 
+// Efeitos input
+var input = $(".contato-input");
+
+input.on("focus", function (event) {
+  $(this).addClass("input-ativo")
+});
+
+input.on("blur", function (event) {
+  if ($(this).val().length == 0) {
+    $(this).removeClass("input-ativo")
+  }
+});
+
+// Galeria Fancybox
 $('.fancybox').fancybox({
   loop: true,
   buttons: [

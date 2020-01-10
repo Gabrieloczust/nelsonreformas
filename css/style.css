@@ -201,6 +201,10 @@ section {
     letter-spacing: 2px;
 }
 
+.servicos-titulo br {
+    display: none;
+}
+
 .servicos-conteudo {
     display: flex;
     justify-content: space-between;
@@ -406,20 +410,17 @@ a.contato-link:hover * {
 
 .contato-form textarea {
     min-height: 50px;
-    height: 170px;
+    height: 195px;
     padding-top: 17px;
 }
 
-.contato-form input:focus,
-.contato-form textarea:focus {
-    border-color: #e5581c;
-}
-
-.contato-form input:focus:valid {
+.contato-input:focus:valid,
+.input-ativo:valid {
     border-color: #60937d;
 }
 
-.contato-form input:focus:invalid {
+.contato-input:focus:invalid,
+.input-ativo:invalid {
     border-color: #d90f00;
 }
 
@@ -432,7 +433,6 @@ a.contato-link:hover * {
     text-align: center;
     cursor: pointer;
     transition: 0.3s all;
-    margin-top: 25px;
     border: 1px solid transparent;
     outline: 0;
 }
@@ -471,13 +471,9 @@ a.contato-link:hover * {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    transition: 0.5s;
     cursor: pointer;
     display: none;
-}
-
-.botao-top:hover {
-    background-color: #000;
+    animation: mover 1s infinite alternate;
 }
 
 @media(max-width: 1220px) {
@@ -513,6 +509,16 @@ a.contato-link:hover * {
 
     .projeto img {
         height: 220px;
+    }
+}
+
+@media(min-width: 991px) {
+    .menu {
+        display: flex !important;
+    }
+
+    .botao-top:hover {
+        background-color: #000;
     }
 }
 
@@ -572,7 +578,7 @@ a.contato-link:hover * {
         display: block;
         height: 40px;
         width: 40px;
-        background: url(../img/menu.svg) no-repeat center;
+        background: url(../img/menu.svg) no-repeat center #fff;
         background-size: contain;
         border-radius: 50%;
         margin-right: 4%;
@@ -614,6 +620,7 @@ a.contato-link:hover * {
     .banner .botao {
         width: 80%;
         margin: 25px auto 0;
+        animation: mover 1s infinite alternate;
     }
 
     .servicos {
@@ -625,6 +632,11 @@ a.contato-link:hover * {
         text-transform: uppercase;
         margin: 50px 0;
     }
+
+    .servicos-titulo br {
+        display: block;
+    }
+
 
     .servicos-conteudo {
         flex-direction: column;
@@ -718,7 +730,6 @@ a.contato-link:hover * {
 
     .copy {
         line-height: 1.5;
-        z-index: 2;
     }
 
     .botao-top {
@@ -726,5 +737,17 @@ a.contato-link:hover * {
         width: 40px;
         right: 5%;
         bottom: 3%;
+        border-radius: 5px;
+        background-size: 12px;
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
     }
 }
