@@ -99,6 +99,7 @@ section {
     color: #fff;
     padding: 25px;
     cursor: pointer;
+    transition: .4s all;
 }
 
 .menu span:hover {
@@ -175,11 +176,13 @@ section {
     transition: 0.3s all;
     margin-top: 50px;
     border: 1px solid transparent;
+    animation: mover 1s infinite alternate;
 }
 
 .banner .botao:hover {
-    background: #000;
-    border-color: #111;
+    background: #fff;
+    border-color: #fff;
+    color: #e5581c;
 }
 
 .servicos {
@@ -620,7 +623,6 @@ a.contato-link:hover * {
     .banner .botao {
         width: 80%;
         margin: 25px auto 0;
-        animation: mover 1s infinite alternate;
     }
 
     .servicos {
@@ -739,6 +741,12 @@ a.contato-link:hover * {
         bottom: 3%;
         border-radius: 5px;
         background-size: 12px;
+    }
+}
+
+@media(max-height: 730px) and (min-width: 991px) {
+    section {
+        padding: 15vh 0;
     }
 }
 
