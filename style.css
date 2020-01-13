@@ -1,0 +1,761 @@
+* {
+    box-sizing: border-box;
+    font-family: montserrat-regular;
+    font-size: 100%;
+    margin: 0;
+    border: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: flex;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    min-height: 100vh;
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 25px 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cabecalho .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.logo span {
+    color: #fff;
+    font: 30px montserrat-extrabold;
+    letter-spacing: 2px;
+    margin-left: 10px;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo br {
+    display: none;
+}
+
+.logo small {
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.menu span,
+.menu a {
+    font-size: 16px;
+    color: #fff;
+    padding: 25px;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.menu span:hover {
+    color: #e5581c;
+}
+
+.menu .whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.menu .whatsapp i {
+    height: 15px;
+    width: 15px;
+    margin-right: 7px;
+    background: url(../img/whatsapp.svg) no-repeat center;
+}
+
+.menu .whatsapp:hover {
+    color: #25d366;
+}
+
+.botao-menu {
+    display: none;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .container {
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner .chamada {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.banner .chamada div {
+    width: 40px;
+    height: 1px;
+    background: #e5581c;
+    margin-right: 25px;
+}
+
+.banner .titulo {
+    font-family: montserrat-medium;
+    font-size: 70px;
+    margin: 25px 0;
+}
+
+.banner .texto {
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.banner .botao {
+    background: #e5581c;
+    font: 12px montserrat-bold;
+    letter-spacing: 1px;
+    padding: 15px 10px;
+    width: 220px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all;
+    margin-top: 50px;
+    border: 1px solid transparent;
+    animation: mover 1s infinite alternate;
+}
+
+.banner .botao:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #e5581c;
+}
+
+.servicos {
+    background: #fff;
+}
+
+.servicos .container {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicos-titulo {
+    width: 100%;
+    text-align: center;
+    font: 50px montserrat-bold;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.servicos-titulo br {
+    display: none;
+}
+
+.servicos-conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+}
+
+.servico-foto {
+    height: 350px;
+    background: #fff;
+    width: 100%;
+}
+
+.servico-titulo {
+    font: 18px montserrat-bold;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.servico-texto {
+    font-size: 15px;
+    color: #999;
+    line-height: 2;
+    text-align: center;
+}
+
+.servico-texto h3 {
+    display: inline;
+}
+
+.projetos {
+    background: url(../img/projetos.png) #2f2f2f left bottom no-repeat;
+}
+
+.projetos .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-titulo {
+    width: 100%;
+    text-align: center;
+    font: 50px montserrat-bold;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.projetos-chamada {
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.projetos-conteudo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.projeto {
+    width: 32%;
+    background: #fff;
+    margin-bottom: 2%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.projeto img {
+    display: block;
+    height: 295px;
+}
+
+.projeto span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(14, 14, 14, 0.7);
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    transition: .35s;
+    opacity: 0;
+}
+
+.projeto:hover span {
+    opacity: 1;
+}
+
+.contato {
+    background: #f1f1f1;
+    position: relative;
+}
+
+.contato .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-titulo {
+    width: 100%;
+    text-align: center;
+    font: 50px montserrat-bold;
+    line-height: 1;
+    color: #000;
+    letter-spacing: 2px;
+    margin: -50px 0 70px;
+}
+
+.contato-conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.contato-link:first-child {
+    margin-top: 0;
+}
+
+.contato-link img {
+    height: 40px;
+    display: flex;
+}
+
+.contato-link b {
+    font-family: montserrat-bold;
+    margin: 25px 0;
+    font-size: 22px;
+    line-height: 1;
+    color: #000;
+
+}
+
+.contato-link span {
+    font-size: 18px;
+    line-height: 1;
+    color: #2f2f2f;
+    display: flex;
+    align-items: center;
+}
+
+.contato-link span i {
+    height: 15px;
+    width: 15px;
+    margin-left: 7px;
+    background: url(../img/whatsapp.svg) no-repeat center;
+}
+
+a.contato-link:hover * {
+    color: #e5581c;
+}
+
+.contato-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    color: #000;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    outline: 0;
+    border: 1px solid transparent;
+}
+
+.contato-form input {
+    height: 50px;
+}
+
+.contato-form textarea {
+    min-height: 50px;
+    height: 195px;
+    padding-top: 17px;
+}
+
+.contato-input:focus:valid,
+.input-ativo:valid {
+    border-color: #60937d;
+}
+
+.contato-input:focus:invalid,
+.input-ativo:invalid {
+    border-color: #d90f00;
+}
+
+.contato-form button {
+    background: #e5581c;
+    color: #fff;
+    font: 12px montserrat-bold;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all;
+    border: 1px solid transparent;
+    outline: 0;
+}
+
+.contato-form button:hover {
+    background: #000;
+    border-color: #111;
+}
+
+.copy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #222;
+    background: #fff;
+    padding: 25px;
+}
+
+.copy a {
+    color: #222;
+}
+
+.copy a:hover {
+    color: #e5581c;
+}
+
+.botao-top {
+    height: 58px;
+    width: 58px;
+    background: url(../img/top.svg) no-repeat center #e5581c;
+    background-size: 15px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+    animation: mover 1s infinite alternate;
+}
+
+@media(max-width: 1220px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .logo span {
+        font-size: 25px;
+    }
+
+    .menu span,
+    .menu a {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .banner .titulo {
+        font-size: 55px;
+    }
+
+    .servico-foto {
+        height: 220px;
+    }
+
+    .servico-titulo {
+        font-size: 16px;
+    }
+
+    .projeto img {
+        height: 220px;
+    }
+}
+
+@media(min-width: 991px) {
+    .menu {
+        display: flex !important;
+    }
+
+    .botao-top:hover {
+        background-color: #000;
+    }
+}
+
+@media(max-width: 990px) {
+    section {
+        min-height: 0;
+    }
+
+    .cabecalho {
+        padding: 0;
+    }
+
+    .cabecalho .container {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .logo {
+        margin: 25px 4%;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    .logo br {
+        display: block;
+    }
+
+    .logo small {
+        display: none;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        margin-top: -25px;
+    }
+
+    .menu .whatsapp {
+        display: none;
+    }
+
+    .menu span {
+        font-size: 15px;
+        padding: 15px 4%;
+        width: 100%;
+    }
+
+    .botao-menu {
+        display: block;
+        height: 40px;
+        width: 40px;
+        background: url(../img/menu.svg) no-repeat center #fff;
+        background-size: contain;
+        border-radius: 50%;
+        margin-right: 4%;
+    }
+
+    .banner {
+        padding: 210px 0 100px;
+    }
+
+    .banner .chamada {
+        font-size: 14px;
+        text-align: center;
+        justify-content: center;
+        text-shadow: 1px 1px 0 #000;
+
+    }
+
+    .banner .chamada div {
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    .banner .titulo {
+        font-size: 35px;
+        text-align: center;
+        text-shadow: 1px 1px 0 #000;
+    }
+
+    .banner .texto {
+        font-size: 15px;
+        text-align: center;
+        text-shadow: 1px 1px 0 #000;
+    }
+
+    .banner .texto br {
+        display: none;
+    }
+
+    .banner .botao {
+        width: 80%;
+        margin: 25px auto 0;
+    }
+
+    .servicos {
+        padding: 0;
+    }
+
+    .servicos-titulo {
+        font-size: 25px;
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+
+    .servicos-titulo br {
+        display: block;
+    }
+
+
+    .servicos-conteudo {
+        flex-direction: column;
+    }
+
+    .servico {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+
+    .servico-foto {
+        height: auto;
+
+    }
+
+    .projetos {
+        padding-bottom: 25px;
+    }
+
+    .projetos-titulo {
+        font-size: 25px;
+    }
+
+    .projetos-chamada {
+        margin-top: 5px;
+    }
+
+    .projetos-conteudo {
+        flex-direction: column;
+    }
+
+    .projeto {
+        width: 100%;
+        margin: 0 0 25px;
+    }
+
+    .projeto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .projeto span {
+        opacity: 1;
+    }
+
+    .contato {
+        padding: 0 0 80px;
+    }
+
+    .contato-titulo {
+        font-size: 25px;
+        margin: 25px 0;
+    }
+
+    .contato-conteudo {
+        flex-direction: column;
+    }
+
+    .contato-link {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contato-link img {
+        height: 25px;
+    }
+
+    .contato-link b {
+        margin: 15px 0 10px;
+        font-size: 18px;
+    }
+
+    .contato-link span {
+        font-size: 15px;
+    }
+
+    .contato-form {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .contato-form input,
+    .contato-form textarea {
+        margin-bottom: 15px;
+    }
+
+    .contato-form button {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .copy {
+        line-height: 1.5;
+    }
+
+    .botao-top {
+        height: 40px;
+        width: 40px;
+        right: 5%;
+        bottom: 3%;
+        border-radius: 5px;
+        background-size: 12px;
+    }
+}
+
+@media(max-height: 730px) and (min-width: 991px) {
+    section {
+        padding: 15vh 0;
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
