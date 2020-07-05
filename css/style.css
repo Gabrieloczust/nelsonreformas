@@ -127,6 +127,10 @@ section {
     transition: .4s all;
 }
 
+.menu a{
+    padding-right: 0;
+}
+
 .menu .ativo,
 .menu span:hover {
     color: #e5581c !important;
@@ -154,15 +158,28 @@ section {
 
 .banner {
     min-height: 100vh !important;
-    background-image: url(../img/banner.jpg);
+    position: relative;
+}
+
+.banner-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/banner1.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(.9);
 }
 
 .banner .container {
     flex-direction: column;
     justify-content: center;
+    align-items: flex-end;
+    text-align: right;
     color: #fff;
 }
 
@@ -175,9 +192,9 @@ section {
 
 .banner .chamada div {
     width: 40px;
-    height: 1px;
+    height: 2px;
     background: #e5581c;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .banner .titulo {
@@ -619,6 +636,16 @@ a.contato-link:hover * {
 
     .banner {
         padding: 210px 0 100px;
+    }
+
+    .banner-img{
+        background-attachment: fixed;
+        background-position: unset;
+        filter: brightness(.75);
+    }
+
+    .banner .container {
+        align-items: center;
     }
 
     .banner .chamada {
