@@ -38,15 +38,17 @@
                     </span>
                 </h1>
             </div>
-            <div class="botao-menu"></div>
+            <div class="botoes-mobile">
+                <a class="botao-whats" rel="whatsapp"></a>
+                <div class="botao-menu"></div>
+            </div>
             <nav class="menu">
-                <span class="drop" data-section="section_1">Serviços</span>
-                <span class="drop" data-section="section_2">Projetos</span>
+                <span class="drop" data-section="section_1">Nossos Serviços</span>
+                <span class="drop" data-section="section_2">Serviços Realizados</span>
                 <span class="drop" data-section="section_3">Contato</span>
-                <a class="whatsapp" title="Envie um WhatsApp agora!"
-                    href="https://web.whatsapp.com/send?phone=554188518580&text=Olá Nelson" target="_blank">
+                <a class="whatsapp" title="Envie um WhatsApp agora!" target="_blank" rel="whatsapp">
                     <i class="i-whatsapp"></i>
-                    <div href="#">(41) 9 8851-8580</div>
+                    <div>(41) 9 8851-8580</div>
                 </a>
             </nav>
         </div>
@@ -62,7 +64,7 @@
                 </span class="chamada">
                 <h2 class="titulo">Obras e Reformas</h2>
                 <div class="texto">
-                    Com 30 anos de experiência e muitas <h2 style="display: inline"><b>obras <br>
+                    Com mais de 30 anos de experiência, com <h2 style="display: inline"><b>obras <br>
                             de pequeno e grande porte</b></h2> executadas.
                 </div>
                 <span class="botao drop" title="Entre em Contato" data-section="section_3">ENTRE EM CONTATO</span>
@@ -106,8 +108,8 @@
 
         <section class="projetos section" id="section_2">
             <div class="container">
-                <span class="projetos-titulo">Projetos Finalizados</span>
-                <span class="projetos-chamada">Clique no projeto para ver mais detalhes!</span>
+                <span class="projetos-titulo">Serviços <br>Realizados</span>
+                <span class="projetos-chamada">Clique na imagem para ver mais detalhes!</span>
                 <div class="projetos-conteudo">
                     <div class="projeto fancybox" data-fancybox="gallery1" href="img/projeto1.jpg">
                         <img src="img/projeto1.jpg" alt="Projeto" title="Projeto">
@@ -150,8 +152,7 @@
                 <span class="contato-titulo">Entre em Contato</span>
                 <div class="contato-conteudo">
                     <div class="contato-info">
-                        <a class="contato-link" title="Envie um WhatsApp Agora!"
-                            href="https://web.whatsapp.com/send?phone=554188518580&text=Olá Nelson" target="_blank">
+                        <a class="contato-link" title="Envie um WhatsApp Agora!" target="_blank" rel="whatsapp">
                             <img class="icone-telefone" src="img/telefone.svg" alt="Telefone">
                             <b>Telefone</b>
                             <span>(41) 9 8851-8580 <i class="whatsapp"></i></span>
@@ -166,6 +167,9 @@
                             <img class="icone-relogio" src="img/relogio.svg" alt="Relógio">
                             <b>Hórario de Atendimento</b>
                             <span>De Segunda à Sexta das 8h às 18h</span>
+                        </div>
+                        <div class="contato-link contato-mobile">
+                            <b>Envie uma Mensagem</b>
                         </div>
                     </div>
                     <form class="contato-form" action="#">
@@ -188,8 +192,6 @@
             </div>
         </section>
 
-        <div class="botao-top drop" data-section="section_0" title="Ir para o Topo"></div>
-
     </footer>
 
     <script src="js/jquery.min.js"></script>
@@ -199,6 +201,7 @@
     <script src="js/mask.js"></script>
     <script src="js/form.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/whatsapp.js"></script>
 
 </body>
 

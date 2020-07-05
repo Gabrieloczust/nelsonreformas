@@ -44,7 +44,7 @@ section {
 
 .container {
     width: 100%;
-    max-width: 1220px;
+    max-width: 1120px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -148,7 +148,7 @@ section {
     color: #25d366;
 }
 
-.botao-menu {
+.botoes-mobile {
     display: none;
 }
 
@@ -293,6 +293,7 @@ section {
 
 .projetos-chamada {
     font-size: 13px;
+    line-height: 1.5;
     color: #fff;
     text-align: center;
     letter-spacing: 2px;
@@ -318,7 +319,8 @@ section {
 
 .projeto img {
     display: block;
-    height: 295px;
+    height: 250px;
+    width: 100%;
 }
 
 .projeto span {
@@ -369,6 +371,10 @@ section {
 .contato-info {
     display: flex;
     flex-direction: column;
+}
+
+.contato-mobile {
+    display: none !important;
 }
 
 .contato-link {
@@ -492,20 +498,6 @@ a.contato-link:hover * {
     color: #e5581c;
 }
 
-.botao-top {
-    height: 58px;
-    width: 58px;
-    background: url(../img/top.svg) no-repeat center #e5581c;
-    background-size: 15px;
-    border-radius: 10px;
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    cursor: pointer;
-    display: none;
-    animation: mover 1s infinite alternate;
-}
-
 @media(max-width: 1220px) {
     .container {
         padding: 0 5%;
@@ -546,10 +538,6 @@ a.contato-link:hover * {
     .menu {
         display: flex !important;
     }
-
-    .botao-top:hover {
-        background-color: #000;
-    }
 }
 
 @media(max-width: 990px) {
@@ -566,7 +554,7 @@ a.contato-link:hover * {
         padding: 0;
     }
 
-    .cabecalho2 .logo span{
+    .cabecalho2 .logo span {
         font-size: 17px;
     }
 
@@ -608,14 +596,25 @@ a.contato-link:hover * {
         width: 100%;
     }
 
+    .botoes-mobile {
+        display: flex;
+        margin-right: 4%;
+    }
+
+    .botao-whats {
+        height: 40px;
+        width: 40px;
+        background: url(../img/whatsapp.svg) no-repeat center;
+        background-size: contain;
+        margin-right: 20px;
+    }
+
     .botao-menu {
-        display: block;
         height: 40px;
         width: 40px;
         background: url(../img/menu.svg) no-repeat center #fff;
         background-size: contain;
         border-radius: 50%;
-        margin-right: 4%;
     }
 
     .banner {
@@ -742,13 +741,17 @@ a.contato-link:hover * {
         font-size: 18px;
     }
 
+    .contato-mobile {
+        display: flex !important;
+    }
+
     .contato-link span {
         font-size: 15px;
     }
 
     .contato-form {
         width: 100%;
-        margin: 50px 0;
+        margin: 10px 0 50px 0;
     }
 
     .contato-form input,
@@ -763,15 +766,6 @@ a.contato-link:hover * {
 
     .copy {
         line-height: 1.5;
-    }
-
-    .botao-top {
-        height: 40px;
-        width: 40px;
-        right: 5%;
-        bottom: 3%;
-        border-radius: 5px;
-        background-size: 12px;
     }
 }
 
