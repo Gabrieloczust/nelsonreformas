@@ -268,6 +268,7 @@ section {
     height: 350px;
     background: #fff;
     width: 100%;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,.15);
 }
 
 .servico-titulo {
@@ -283,6 +284,8 @@ section {
     color: #999;
     line-height: 2;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .servico-texto h3 {
@@ -315,6 +318,10 @@ section {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 50px;
+}
+
+.projetos-chamada.mobile{
+    display: none;
 }
 
 .projetos-conteudo {
@@ -703,7 +710,7 @@ a.contato-link:hover * {
 
     .servico {
         width: 100%;
-        margin: 0 0 50px;
+        margin: 0 0 35px;
     }
 
     .servico-foto {
@@ -721,6 +728,14 @@ a.contato-link:hover * {
 
     .projetos-chamada {
         margin-top: 5px;
+    }
+
+    .projetos-chamada.desktop{
+        display: none;
+    }
+
+    .projetos-chamada.mobile{
+        display: block;
     }
 
     .projetos-conteudo {
