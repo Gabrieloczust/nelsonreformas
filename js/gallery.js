@@ -1,4 +1,15 @@
-// Galeria Fancybox
+// Bxslider
+$(document).ready(function () {
+    $('.bxslider').bxSlider({
+        minSlides: 1,
+        maxSlides: 1,
+        auto: true,
+        autoControls: false,
+        slideMargin: 0
+    });
+});
+
+// Fancybox
 $('.fancybox').fancybox({
     loop: true,
     buttons: [
