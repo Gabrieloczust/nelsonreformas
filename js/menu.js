@@ -15,7 +15,7 @@ $('.botao-menu').click(function () {
 var linkMenu = $('.drop');
 var linkMenuNome = 'drop'
 var alturas = [];
-headerHeight = $('.cabecalho').height() - 15
+headerHeight = $('.cabecalho').height() - 4
 
 $('.section').each(function () {
   alturas[$(this).prop('id')] = $(this).offset().top;
