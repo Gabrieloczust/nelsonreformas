@@ -249,10 +249,6 @@ section {
     letter-spacing: 2px;
 }
 
-.servicos-titulo br {
-    display: none;
-}
-
 .servicos-conteudo {
     display: flex;
     justify-content: space-between;
@@ -367,6 +363,12 @@ section {
     opacity: 1;
 }
 
+.rodape{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 .contato {
     background: #e6e6e6;
     position: relative;
@@ -385,7 +387,7 @@ section {
     line-height: 1;
     color: #000;
     letter-spacing: 2px;
-    margin: -50px 0 70px;
+    margin: 0 0 50px;
 }
 
 .contato-conteudo {
@@ -505,9 +507,6 @@ a.contato-link:hover * {
 }
 
 .copy {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     width: 100%;
     text-align: center;
     font-size: 14px;
@@ -764,12 +763,13 @@ a.contato-link:hover * {
     }
 
     .contato {
-        padding: 0 0 80px;
+        padding: 0;
     }
 
     .contato-titulo {
         font-size: 25px;
         margin: 25px 0;
+        letter-spacing: 0px;
     }
 
     .contato-conteudo {
@@ -779,6 +779,7 @@ a.contato-link:hover * {
     .contato-link {
         align-items: center;
         justify-content: center;
+        margin-top: 35px;
     }
 
     .contato-link img {
@@ -800,7 +801,7 @@ a.contato-link:hover * {
 
     .contato-form {
         width: 100%;
-        margin: 10px 0 50px 0;
+        margin: 10px 0 35px 0;
     }
 
     .contato-form input,
