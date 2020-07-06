@@ -221,7 +221,7 @@ section {
     transition: 0.3s all;
     margin-top: 50px;
     border: 1px solid transparent;
-    animation: mover 1s infinite alternate;
+    animation: moverY 1s infinite alternate;
 }
 
 .banner .botao:hover {
@@ -262,7 +262,7 @@ section {
 }
 
 .servico-foto {
-    height: 30vh;
+    height: 40vh;
     max-height: 350px;
     background: #fff;
     width: 100%;
@@ -534,7 +534,7 @@ a.contato-link:hover * {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 0 10px -2px #000;
-    animation: mover 1.5s infinite alternate;
+    animation: moverX 1s infinite alternate;
 }
 
 #whatsapp:hover {
@@ -848,12 +848,22 @@ a.contato-link:hover * {
     }
 }
 
-@keyframes mover {
+@keyframes moverY {
     0% {
         transform: translateY(0);
     }
 
     100% {
         transform: translateY(-10px);
+    }
+}
+
+@keyframes moverX {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-5px);
     }
 }
