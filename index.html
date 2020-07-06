@@ -16,13 +16,14 @@
     <title>Nelson Oczust - Reformas em Curitiba</title>
     <link rel="canonical" href="https://www.nelsonreformas.com.br/">
     <link rel="icon" href="img/favicon.png">
-    <link rel="preload" href="css/fonts.css" as="style">
-    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/fonts.min.css" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="css/jquery.fancybox.min.css" as="style">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/jquery.bxslider.min.css" as="style">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
 </head>
 
 <body>
@@ -162,21 +163,6 @@
                         <a href="img/servicos/15.jpeg" class="fancybox" data-fancybox="gallery">
                             <img src="img/servicos/15.jpeg" alt="Imagem de Serviço Realizado">
                         </a>
-                        <a href="img/servicos/16.jpeg" class="fancybox" data-fancybox="gallery">
-                            <img src="img/servicos/16.jpeg" alt="Imagem de Serviço Realizado">
-                        </a>
-                        <a href="img/servicos/17.jpeg" class="fancybox" data-fancybox="gallery">
-                            <img src="img/servicos/17.jpeg" alt="Imagem de Serviço Realizado">
-                        </a>
-                        <a href="img/servicos/18.jpeg" class="fancybox" data-fancybox="gallery">
-                            <img src="img/servicos/18.jpeg" alt="Imagem de Serviço Realizado">
-                        </a>
-                        <a href="img/servicos/19.jpeg" class="fancybox" data-fancybox="gallery">
-                            <img src="img/servicos/19.jpeg" alt="Imagem de Serviço Realizado">
-                        </a>
-                        <a href="img/servicos/20.jpeg" class="fancybox" data-fancybox="gallery">
-                            <img src="img/servicos/20.jpeg" alt="Imagem de Serviço Realizado">
-                        </a>
                     </div>
                 </div>
             </div>
@@ -210,7 +196,7 @@
                             <b>Envie uma Mensagem</b>
                         </div>
                     </div>
-                    <form class="contato-form" action="#">
+                    <form class="contato-form" method="POST" action="mail.php">
                         <input class="contato-input" type="text" name="nome" placeholder="Nome *" required
                             pattern="^[^-\s][a-zA-ZÀ-ú ]*" title="Apenas Letras">
                         <input class="contato-input" type="email" name="email" placeholder="E-mail"
@@ -238,7 +224,6 @@
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/mask.js"></script>
     <script src="js/form.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/whatsapp.js"></script>
