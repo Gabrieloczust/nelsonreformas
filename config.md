@@ -1,0 +1,12 @@
+- phpmailer
+- sitemap
+- analytics
+- title
+- description
+- keywords
+- hs
+
+- Google Keyword Planner
+- AnswerThePublic
+- Ahrefs
+- SEMRush
