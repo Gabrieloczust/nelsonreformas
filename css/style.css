@@ -523,6 +523,24 @@ a.contato-link:hover * {
     color: #e5581c;
 }
 
+#whatsapp {
+    height: 70px;
+    width: 70px;
+    background: url('../img/whatsapp-branco.svg') no-repeat center #25d366;
+    background-size: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px -2px #000;
+    animation: mover 1.5s infinite alternate;
+}
+
+#whatsapp:hover {
+    background-color: #075E54;
+}
+
 @media(max-width: 1220px) {
     .container {
         padding: 0 5%;
@@ -816,6 +834,11 @@ a.contato-link:hover * {
 
     .copy {
         line-height: 1.5;
+    }
+
+    #whatsapp{
+        height: 50px;
+        width: 50px;
     }
 }
 
