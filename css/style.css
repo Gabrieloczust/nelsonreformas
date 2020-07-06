@@ -181,6 +181,7 @@ section {
     align-items: flex-end;
     text-align: right;
     color: #fff;
+    padding-top: 75px;
 }
 
 .banner .chamada {
@@ -265,7 +266,8 @@ section {
 }
 
 .servico-foto {
-    height: 350px;
+    height: 30vh;
+    max-height: 350px;
     background: #fff;
     width: 100%;
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,.15);
@@ -366,7 +368,7 @@ section {
 }
 
 .contato {
-    background: #f1f1f1;
+    background: #e6e6e6;
     position: relative;
 }
 
@@ -653,6 +655,8 @@ a.contato-link:hover * {
 
     .banner .container {
         align-items: center;
+        padding-top: 0;
+        margin-top: -25px;
     }
 
     .banner .chamada {
@@ -714,8 +718,9 @@ a.contato-link:hover * {
     }
 
     .servico-foto {
-        height: auto;
-
+        height: 180px;
+        width: auto;
+        max-width: 100%;
     }
 
     .projetos {
@@ -743,13 +748,15 @@ a.contato-link:hover * {
     }
 
     .projeto {
-        width: 100%;
-        margin: 0 0 25px;
+        width: 270px;
+        max-width: 100%;
+        height: 180px;
+        margin: 0 auto 25px;
     }
 
     .projeto img {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        height: 100%;
     }
 
     .projeto span {
