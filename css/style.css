@@ -172,7 +172,7 @@ section {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(.9);
+    filter: brightness(.75);
 }
 
 .banner .container {
@@ -262,7 +262,7 @@ section {
 }
 
 .servico-foto {
-    height: 40vh;
+    height: 35vh;
     max-height: 350px;
     background: #fff;
     width: 100%;
