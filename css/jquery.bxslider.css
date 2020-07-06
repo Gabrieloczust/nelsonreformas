@@ -212,13 +212,13 @@ ul.bxslider {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 886px;
+  width: 650px;
 }
 
 .bx-wrapper .bx-controls-direction a {
   outline: 0;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   text-indent: -9999px;
   z-index: 9997;
   position: absolute
