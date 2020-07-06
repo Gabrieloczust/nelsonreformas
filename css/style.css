@@ -323,13 +323,13 @@ section {
 }
 
 .projetos-conteudo {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 600px;
 }
 
 .projetos-conteudo img {
     width: 100%;
-    max-height: 400px;
+    height: 600px;
 }
 
 .rodape {
@@ -722,12 +722,12 @@ a.contato-link:hover * {
     }
 
     .projetos-conteudo {
-        width: 250px;
-        height: 150px;
+        width: 200px;
+        height: 300px;
     }
 
     .projetos-conteudo img {
-        max-height: 150px;
+        height: 300px;
     }
 
     .contato {
