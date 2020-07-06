@@ -23,14 +23,14 @@ $('.section').each(function () {
 
 linkMenu.on('click', function () {
   $("html, body").animate({
-    scrollTop: $('#' + $(this).data('section')).offset().top - headerHeight
+    scrollTop: $('#' + $(this).data('section')).offset().top // - headerHeight
   }, 500);
   if (width < 991) {
     $('.menu').hide()
   }
 });
 
-$(document).scroll(function () {
+/*$(document).scroll(function () {
   var y = $(this).scrollTop();
   var header = $('.cabecalho').outerHeight()
   if ((y < header)) {
@@ -39,4 +39,4 @@ $(document).scroll(function () {
     $('.cabecalho').addClass('cabecalho2')
   }
   $('.section').css('min-height', 'calc(100vh - ' + header + 'px)')
-});
+});*/
