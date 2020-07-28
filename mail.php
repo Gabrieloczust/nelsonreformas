@@ -18,7 +18,7 @@ $headers .= "From: $email\r\n"; // remetente
 $headers .= "Return-Path: $email\r\n"; // return-path
 $envio = mail("devoczust@gmail.com", "Contato pelo Site", $body, $headers);
 
-$status = $envio ? true : false;
+$status = $envio ? 'true' : 'false';
 
 header("Location: index.php?email=$status");
 exit;
