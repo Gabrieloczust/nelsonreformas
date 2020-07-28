@@ -20,5 +20,5 @@ $envio = mail("devoczust@gmail.com", "Contato pelo Site", $body, $headers);
 
 $status = $envio ? true : false;
 
-header("Location: index.html?email=$status");
+header("Location: index.php?email=$status");
 exit;
